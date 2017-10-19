@@ -1,6 +1,10 @@
 
 def fizzbuzz(num)
-  return_val = nil
+  if !((num % 3 == 0) || (num % 5 == 0))
+    return_val = nil
+  else
+    return_val = ""
+  end
   if(num % 3 == 0)
     return_val += "Fizz"
   end
